@@ -1,7 +1,6 @@
+# 90-Day Comprehensive Tech Study Plan
 
-# 180-Day Comprehensive Tech Study Plan
-
-Welcome to the 180-day comprehensive tech study plan! This plan is designed to guide you through a rigorous learning journey covering frontend, backend, DevOps, QA, and aptitude. Each day includes a detailed focus area with tasks, study materials.
+Welcome to the 90-day comprehensive tech study plan! This plan is designed to guide you through a learning journey covering Frontend, Backend, DevOps, QA, and Aptitude. Each day includes a detailed focus area with tasks, study materials, and daily checkboxes.
 
 ## Table of Contents
 1. [Week 1: Internet Fundamentals](#week-1-internet-fundamentals)
@@ -24,7 +23,7 @@ Welcome to the 180-day comprehensive tech study plan! This plan is designed to g
   - Basics of Internet and Web
   - How the Internet works
 - **Practice:**
-  - Read about internet fundamentals from [Internet Basics](https://www.internetsociety.org/tutorials/).
+  - [ ] Read about internet fundamentals from [Internet Basics](https://www.internetsociety.org/tutorials/).
 - **Interview Q/A:**
   - What is the Internet and how does it differ from the Web?
 
@@ -33,7 +32,7 @@ Welcome to the 180-day comprehensive tech study plan! This plan is designed to g
   - HTTP vs HTTPS
   - How HTTPS ensures security
 - **Practice:**
-  - Explore HTTP/HTTPS using [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview).
+  - [ ] Explore HTTP/HTTPS using [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview).
 - **Interview Q/A:**
   - How does HTTPS provide security over HTTP?
 
