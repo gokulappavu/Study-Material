@@ -1,623 +1,517 @@
-# 180-Day Study Plan
+Here's a 90-day study plan that covers beginner, intermediate, and advanced levels for each topic related to Internet & Networking, Frontend Development, Backend Development, Full Stack Development (MERN/MEAN/MEVN), Frameworks & Libraries, API Development, DevOps, Testing, and Git & GitHub.
 
-This README outlines a comprehensive 180-day study plan covering Frontend, Backend, Full Stack, MERN, MEAN, MEVN, DevOps, Testing, API Development, Interview Preparation, and Aptitude. The plan is divided into beginner, intermediate, and advanced levels for each topic, with daily tasks, assessments, and study materials.
+This plan is designed with daily tasks, assessments, and notes to ensure a comprehensive understanding. 
 
-## Index
+### README.md
 
-1. [Days 1-15: Understanding the Internet & Networking](#days-1-15-understanding-the-internet--networking)
-2. [Days 16-30: Frontend Development](#days-16-30-frontend-development)
-3. [Days 31-45: Backend Development](#days-31-45-backend-development)
-4. [Days 46-60: Full Stack Development](#days-46-60-full-stack-development)
-5. [Days 61-75: MERN Stack](#days-61-75-mern-stack)
-6. [Days 76-90: MEAN Stack](#days-76-90-mean-stack)
-7. [Days 91-105: MEVN Stack](#days-91-105-mevn-stack)
-8. [Days 106-120: DevOps](#days-106-120-devops)
-9. [Days 121-135: Testing](#days-121-135-testing)
-10. [Days 136-150: API Development](#days-136-150-api-development)
-11. [Days 151-165: Interview Preparation](#days-151-165-interview-preparation)
-12. [Days 166-180: Aptitude Preparation](#days-166-180-aptitude-preparation)
-13. [Days 181-183: Final Project](#days-181-183-final-project)
-14. [Day 184: Review and Final Assessment](#day-184-review-and-final-assessment)
+# 90-Day Study Plan
+
+## Table of Contents
+- [Week 1: Understanding the Internet & Networks](#week-1-understanding-the-internet--networks)
+- [Week 2: Frontend Development Basics](#week-2-frontend-development-basics)
+- [Week 3: Intermediate Frontend Development](#week-3-intermediate-frontend-development)
+- [Week 4: Advanced Frontend Development & Introduction to Backend](#week-4-advanced-frontend-development--introduction-to-backend)
+- [Week 5: Intermediate Backend Development](#week-5-intermediate-backend-development)
+- [Week 6: Advanced Backend Development](#week-6-advanced-backend-development)
+- [Week 7: Full Stack Development (MERN/MEAN/MEVN) Basics](#week-7-full-stack-development-mernmeanmevn-basics)
+- [Week 8: Intermediate Full Stack Development](#week-8-intermediate-full-stack-development)
+- [Week 9: Advanced Full Stack Development & Additional Topics](#week-9-advanced-full-stack-development--additional-topics)
 
 ---
 
-## Days 1-15: Understanding the Internet & Networking
+## Week 1: Understanding the Internet & Networks
 
-### Day 1: Basics of Networking
+### Day 1: Introduction to the Internet
+- **Beginner**: Learn about Internet architecture, IP addressing, and DNS.
+  - **Study Material**: 
+    - [What is the Internet? - Wikipedia](https://en.wikipedia.org/wiki/Internet)
+    - [How the Internet Works - YouTube](https://www.youtube.com/watch?v=7_LPdD3H_Wg)
+  - **Task**: Read articles and watch the video.
+  - **Assessment**: Quiz on basic internet concepts.
+  - **Notes**: Document key components like IP addresses, DNS, and HTTP.
 
-#### Beginner
-- [x] **Topics**: 
-  - Introduction to Networking
-  - Key Concepts (IP Addresses, DNS)
-- [ ] **Tasks**: 
-  - Research basic networking concepts.
-  - Create a diagram of a simple network.
-- [ ] **Assessment**: 
-  - Quiz on networking basics.
-- [ ] **Study Material**:
-  - [Networking Basics](https://www.cloudflare.com/learning/ddos/what-is-a-network/)
-  - [DNS Basics](https://www.cloudflare.com/learning/dns/what-is-dns/)
+### Day 2: Basics of Networking
+- **Beginner**: Understand network types (LAN, WAN) and basic networking devices.
+  - **Study Material**: 
+    - [Networking Basics - Cisco](https://www.cisco.com/c/en/us/products/collateral/ios-nx-os-software/ios-networking/guide_c07-736711.html)
+    - [Networking 101 - YouTube](https://www.youtube.com/watch?v=0hKDkDDiK2Q)
+  - **Task**: Review network types and devices.
+  - **Assessment**: Create a diagram of different network types.
+  - **Notes**: Note types of networks and their use cases.
 
-#### Intermediate
-- [ ] **Topics**: 
-  - Networking Models (OSI, TCP/IP)
-  - Understanding Subnetting and IP Addressing
-- [ ] **Tasks**: 
-  - Study the OSI and TCP/IP models.
-  - Practice subnetting with online tools.
-- [ ] **Assessment**: 
-  - Quiz on OSI and TCP/IP models.
-- [ ] **Study Material**:
-  - [OSI Model Explained](https://www.geeksforgeeks.org/layers-of-osi-model/)
-  - [Subnetting Tutorial](https://www.subnetonline.com/pages/subnet-calculator.php)
+### Day 3: Understanding HTTP/HTTPS
+- **Beginner**: Explore HTTP vs HTTPS and their significance.
+  - **Study Material**: 
+    - [HTTP vs HTTPS - MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview)
+    - [SSL/TLS Explained - YouTube](https://www.youtube.com/watch?v=ie7R3jfdyxk)
+  - **Task**: Compare HTTP and HTTPS, explore SSL/TLS basics.
+  - **Assessment**: Write a summary of HTTPS and its importance.
+  - **Notes**: Document differences between HTTP and HTTPS.
 
-#### Advanced
-- [ ] **Topics**: 
-  - Network Security Concepts
-  - Advanced Networking Protocols (BGP, OSPF)
-- [ ] **Tasks**: 
-  - Research network security protocols.
-  - Explore routing protocols like BGP and OSPF.
-- [ ] **Assessment**: 
-  - Lab exercise on configuring BGP/OSPF.
-- [ ] **Study Material**:
-  - [Network Security Basics](https://www.cisco.com/c/en/us/products/security/what-is-network-security.html)
-  - [BGP and OSPF Overview](https://www.cloudflare.com/learning/ddos/bgp/)
+### Day 4: Introduction to DNS
+- **Beginner**: Learn about DNS, its records, and domain registration.
+  - **Study Material**: 
+    - [What is DNS? - Cloudflare](https://www.cloudflare.com/learning/dns/what-is-dns/)
+    - [DNS Explained - YouTube](https://www.youtube.com/watch?v=72snZctd7z0)
+  - **Task**: Explore DNS records and domain registration process.
+  - **Assessment**: Perform a DNS lookup using online tools.
+  - **Notes**: Note different types of DNS records and their functions.
 
----
+### Day 5: Introduction to Frontend Development
+- **Beginner**: Get started with HTML basics.
+  - **Study Material**: 
+    - [HTML Basics - MDN](https://developer.mozilla.org/en-US/docs/Learn/HTML)
+  - **Task**: Create a simple HTML page.
+  - **Assessment**: Submit an HTML page with basic elements.
+  - **Notes**: Record HTML elements and attributes used.
 
-## Days 16-30: Frontend Development
+### Day 6: Intermediate HTML & CSS
+- **Intermediate**: Learn advanced HTML5 elements and CSS styling.
+  - **Study Material**: 
+    - [HTML5 Guide - MDN](https://developer.mozilla.org/en-US/docs/Web/HTML)
+    - [CSS Flexbox - CSS-Tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+  - **Task**: Build a layout using advanced HTML5 and CSS Flexbox.
+  - **Assessment**: Submit a responsive layout using Flexbox.
+  - **Notes**: Document new HTML5 elements and Flexbox properties used.
 
-### Day 16: Introduction to Frontend Development
+### Day 7: Advanced CSS and Responsive Design
+- **Advanced**: Deep dive into CSS Grid and responsive design.
+  - **Study Material**: 
+    - [CSS Grid - CSS-Tricks](https://css-tricks.com/snippets/css/complete-guide-grid/)
+    - [Responsive Web Design - MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design)
+  - **Task**: Create a fully responsive webpage using CSS Grid.
+  - **Assessment**: Submit a webpage showcasing advanced CSS Grid layout.
+  - **Notes**: Note CSS Grid properties and responsive design techniques.
 
-#### Beginner
-- [ ] **Topics**: 
-  - What is Frontend Development?
-  - Overview of HTML, CSS, and JavaScript
-- [ ] **Tasks**: 
-  - Research the role of frontend development.
-  - Build a simple HTML/CSS page.
-- [ ] **Assessment**: 
-  - Quiz on HTML/CSS basics.
-- [ ] **Study Material**:
-  - [HTML Basics](https://www.w3schools.com/html/)
-  - [CSS Basics](https://www.w3schools.com/css/)
-  - [JavaScript Basics](https://www.w3schools.com/js/)
+## Week 2: Frontend Development Basics
 
-#### Intermediate
-- [ ] **Topics**: 
-  - Responsive Design and Flexbox
-  - Introduction to JavaScript Frameworks (React, Vue)
-- [ ] **Tasks**: 
-  - Create a responsive webpage using Flexbox.
-  - Build a small project using React or Vue.
-- [ ] **Assessment**: 
-  - Practical exercise on responsive design and basic React/Vue.
-- [ ] **Study Material**:
-  - [Flexbox Guide](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
-  - [React Documentation](https://reactjs.org/docs/getting-started.html)
-  - [Vue Documentation](https://vuejs.org/v2/guide/)
+### Day 8: Introduction to JavaScript
+- **Beginner**: Learn JavaScript basics including variables, data types, and functions.
+  - **Study Material**: 
+    - [JavaScript Basics - MDN](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps)
+  - **Task**: Write simple JavaScript programs.
+  - **Assessment**: Submit code snippets demonstrating basic JavaScript syntax.
+  - **Notes**: Document JavaScript syntax and data types used.
 
-#### Advanced
-- [ ] **Topics**: 
-  - Advanced JavaScript Concepts (Asynchronous Programming, Closures)
-  - State Management in Frameworks (Redux, Vuex)
-- [ ] **Tasks**: 
-  - Research asynchronous programming in JavaScript.
-  - Implement state management in a React/Vue application.
-- [ ] **Assessment**: 
-  - Lab exercise on state management and asynchronous programming.
-- [ ] **Study Material**:
-  - [JavaScript Async Programming](https://javascript.info/async)
-  - [Redux Documentation](https://redux.js.org/)
-  - [Vuex Documentation](https://vuex.vuejs.org/)
+### Day 9: Intermediate JavaScript - DOM Manipulation
+- **Intermediate**: Understand DOM manipulation and event handling.
+  - **Study Material**: 
+    - [Introduction to the DOM - MDN](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction)
+    - [JavaScript Events - MDN](https://developer.mozilla.org/en-US/docs/Web/Events)
+  - **Task**: Create interactive web elements using DOM manipulation.
+  - **Assessment**: Submit a project with interactive DOM elements.
+  - **Notes**: Note DOM methods and event types used.
 
----
+### Day 10: Advanced JavaScript - Asynchronous Programming
+- **Advanced**: Learn about asynchronous programming with JavaScript (Promises, async/await).
+  - **Study Material**: 
+    - [JavaScript Promises - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises)
+    - [Async/Await - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await)
+  - **Task**: Implement asynchronous functions using Promises and async/await.
+  - **Assessment**: Submit code demonstrating asynchronous JavaScript features.
+  - **Notes**: Document usage of Promises and async/await in your code.
 
-## Days 31-45: Backend Development
+### Day 11: Introduction to Backend Development
+- **Beginner**: Learn the basics of server-side programming with Node.js.
+  - **Study Material**: 
+    - [Node.js Documentation](https://nodejs.org/en/docs/)
+    - [Node.js Tutorial - YouTube](https://www.youtube.com/watch?v=TlB_eWDSMt4)
+  - **Task**: Set up a basic Node.js server.
+  - **Assessment**: Submit a simple Node.js server script.
+  - **Notes**: Document the setup process and Node.js basics.
 
-### Day 31: Introduction to Backend Development
+### Day 12: Intermediate Node.js - Express.js
+- **Intermediate**: Explore Express.js for server-side development.
+  - **Study Material**: 
+    - [Express.js Documentation](https://expressjs.com/)
+    - [Express.js Tutorial - YouTube](https://www.youtube.com/watch?v=L72fhGm1tfE)
+  - **Task**: Create a basic Express.js application with routing.
+  - **Assessment**: Submit an Express.js application with multiple routes.
+  - **Notes**: Note Express.js routing and middleware usage.
 
-#### Beginner
-- [ ] **Topics**: 
-  - What is Backend Development?
-  - Overview of Server, Database, and APIs
-- [ ] **Tasks**: 
-  - Research the role of backend development.
-  - Build a simple server with Node.js or Python.
-- [ ] **Assessment**: 
-  - Quiz on backend basics.
-- [ ] **Study Material**:
-  - [Backend Development Overview](https://www.geeksforgeeks.org/backend-development/)
-  - [Node.js Basics](https://nodejs.org/en/docs/)
-  - [Python Flask Basics](https://flask.palletsprojects.com/en/2.0.x/)
+### Day 13: Advanced Node.js - Authentication
+- **Advanced**: Implement authentication and authorization in an Express.js application.
+  - **Study Material**: 
+    - [Passport.js Documentation](http://www.passportjs.org/docs/)
+    - [JWT Authentication - YouTube](https://www.youtube.com/watch?v=7Q17ubqLfaM)
+  - **Task**: Add user authentication to your Express.js application.
+  - **Assessment**: Submit an application with user authentication.
+  - **Notes**: Document authentication methods and middleware used.
 
-#### Intermediate
-- [ ] **Topics**: 
-  - RESTful APIs and CRUD Operations
-  - Introduction to Databases (SQL vs. NoSQL)
-- [ ] **Tasks**: 
-  - Build a RESTful API with Node.js/Express or Flask.
-  - Set up a simple SQL/NoSQL database.
-- [ ] **Assessment**: 
-  - Practical exercise on building a RESTful API and database operations.
-- [ ] **Study Material**:
-  - [Building RESTful APIs](https://www.codecademy.com/articles/what-is-rest)
-  - [SQL vs NoSQL](https://www.mongodb.com/nosql-explained)
+## Week 3: Backend Development
 
-#### Advanced
-- [ ] **Topics**: 
-  - Advanced Backend Concepts (Authentication, Authorization)
-  - Exploring Microservices Architecture
-- [ ] **Tasks**: 
-  - Research authentication/authorization methods.
-  - Explore microservices architecture and its benefits.
-- [ ] **Assessment**: 
-  - Lab exercise on implementing JWT-based authentication in a REST API.
-- [ ] **Study Material**:
-  - [Authentication vs Authorization](https://auth0.com/docs/get-started/authentication-and-authorization-flow)
-  - [Introduction to Microservices](https://martinfowler.com/articles/microservices.html)
+### Day 14: Introduction to MongoDB
+- **Beginner**: Learn MongoDB basics and CRUD operations.
+  - **Study Material**: 
+    - [MongoDB Documentation](https://docs.mongodb.com/)
+    - [MongoDB Tutorial - YouTube](https://www.youtube.com/watch?v=2e2I5r1t5tM
 
----
+)
+  - **Task**: Set up a MongoDB database and perform basic CRUD operations.
+  - **Assessment**: Submit a project demonstrating CRUD operations in MongoDB.
+  - **Notes**: Note MongoDB commands and operations used.
 
-## Days 46-60: Full Stack Development
+### Day 15: Intermediate MongoDB - Aggregations
+- **Intermediate**: Explore MongoDB aggregations and indexing.
+  - **Study Material**: 
+    - [MongoDB Aggregations - Documentation](https://docs.mongodb.com/manual/aggregation/)
+  - **Task**: Implement aggregation queries in MongoDB.
+  - **Assessment**: Submit a MongoDB project with aggregation queries.
+  - **Notes**: Document aggregation pipelines and indexing strategies.
 
-### Day 46: Introduction to Full Stack Development
+### Day 16: Advanced MongoDB - Performance Optimization
+- **Advanced**: Learn about MongoDB performance optimization techniques.
+  - **Study Material**: 
+    - [MongoDB Performance Tuning - Documentation](https://www.mongodb.com/docs/manual/performance/)
+  - **Task**: Optimize queries and indexes in a MongoDB database.
+  - **Assessment**: Submit a project showing performance improvements.
+  - **Notes**: Record performance tuning techniques and results.
 
-#### Beginner
-- [ ] **Topics**: 
-  - What is Full Stack Development?
-  - Overview of Full Stack Technologies and Roles
-- [ ] **Tasks**: 
-  - Research the responsibilities of a full stack developer.
-  - Explore different technologies used by full stack developers.
-- [ ] **Assessment**: 
-  - Quiz on full stack development concepts and technologies.
-- [ ] **Study Material**:
-  - [What is Full Stack Development?](https://www.theodinproject.com/paths/full-stack-javascript/courses/nodejs/lessons/full-stack)
-  - [Full Stack Technologies Overview](https://www.simplilearn.com/what-is-full-stack-web-development-article)
+### Day 17: Introduction to REST APIs
+- **Beginner**: Understand the basics of REST APIs and their design principles.
+  - **Study Material**: 
+    - [REST API Basics - REST API Tutorial](https://restfulapi.net/)
+  - **Task**: Design a simple REST API.
+  - **Assessment**: Submit API documentation and basic implementation.
+  - **Notes**: Note REST principles and API design considerations.
 
-#### Intermediate
-- [ ] **Topics**: 
-  - Integrating Frontend with Backend
-  - Understanding the MERN/MEAN/MEVN Stack
-- [ ] **Tasks**: 
-  - Create a simple full stack application using MERN/MEAN/MEVN.
-  - Explore how frontend and backend communicate in a full stack application.
-- [ ] **Assessment**: 
-  - Practical exercise on creating a full stack application with a chosen stack.
-- [ ] **Study Material**:
-  - [MERN Stack Overview](https://www.mongodb.com/mern-stack)
-  - [MEAN Stack Overview](https://www.mongodb.com/mean-stack)
-  - [MEVN Stack Overview](https://www.educative.io/answers/what-is-the-mevn-stack)
+### Day 18: Intermediate REST APIs - CRUD Operations
+- **Intermediate**: Implement CRUD operations in a REST API.
+  - **Study Material**: 
+    - [CRUD Operations - REST API Tutorial](https://restfulapi.net/crud-operations/)
+  - **Task**: Build a REST API with CRUD operations.
+  - **Assessment**: Submit a REST API with fully functional CRUD endpoints.
+  - **Notes**: Document CRUD endpoints and their functionality.
 
-#### Advanced
+### Day 19: Advanced REST APIs - Authentication & Security
+- **Advanced**: Implement authentication and security measures in REST APIs.
+  - **Study Material**: 
+    - [REST API Security Best Practices - OWASP](https://owasp.org/www-project-api-security/)
+  - **Task**: Add authentication and security features to your REST API.
+  - **Assessment**: Submit an API with secure authentication mechanisms.
+  - **Notes**: Note security practices and authentication methods used.
 
+## Week 4: Full Stack Development (MERN/MEAN/MEVN) Basics
 
-- [ ] **Topics**: 
-  - Full Stack Application Deployment
-  - Advanced Full Stack Concepts (Caching, Load Balancing)
-- [ ] **Tasks**: 
-  - Deploy a full stack application to a cloud service.
-  - Research and implement caching and load balancing in your application.
-- [ ] **Assessment**: 
-  - Lab exercise on deploying and optimizing a full stack application.
-- [ ] **Study Material**:
-  - [Deploying Full Stack Applications](https://www.heroku.com/)
-  - [Caching and Load Balancing](https://www.nginx.com/resources/glossary/load-balancing/)
+### Day 20: Introduction to MERN Stack
+- **Beginner**: Get an overview of the MERN stack (MongoDB, Express, React, Node.js).
+  - **Study Material**: 
+    - [MERN Stack Guide - Medium](https://medium.com/swlh/mern-stack-tutorial-4fa6e3795c73)
+  - **Task**: Set up a basic MERN stack project.
+  - **Assessment**: Submit a project with basic MERN stack setup.
+  - **Notes**: Document setup steps and configuration.
 
----
+### Day 21: Intermediate MERN Stack - Connecting Frontend and Backend
+- **Intermediate**: Learn to connect React frontend with Express backend.
+  - **Study Material**: 
+    - [Connecting React with Express - Tutorial](https://www.digitalocean.com/community/tutorials/build-a-react-app-with-express-backend)
+  - **Task**: Integrate a React frontend with an Express backend.
+  - **Assessment**: Submit a project showing the connection between frontend and backend.
+  - **Notes**: Document integration process and challenges faced.
 
-## Days 61-75: MERN Stack
+### Day 22: Advanced MERN Stack - State Management with Redux
+- **Advanced**: Implement state management using Redux in a MERN stack application.
+  - **Study Material**: 
+    - [Redux Documentation](https://redux.js.org/)
+    - [Redux Tutorial - YouTube](https://www.youtube.com/watch?v=poQXNp9sKp8)
+  - **Task**: Integrate Redux for state management in your MERN stack application.
+  - **Assessment**: Submit a project with Redux implemented.
+  - **Notes**: Note Redux setup and state management details.
 
-### Day 61: Introduction to MERN Stack
+### Day 23: Introduction to MEAN Stack
+- **Beginner**: Overview of the MEAN stack (MongoDB, Express, Angular, Node.js).
+  - **Study Material**: 
+    - [MEAN Stack Guide - Medium](https://medium.com/@zeeshan.p/mean-stack-tutorial-29c37e8a0d3d)
+  - **Task**: Set up a basic MEAN stack project.
+  - **Assessment**: Submit a project with basic MEAN stack setup.
+  - **Notes**: Document setup steps and configuration.
 
-#### Beginner
-- [ ] **Topics**: 
-  - What is MERN Stack?
-  - Overview of MongoDB, Express.js, React, and Node.js
-- [ ] **Tasks**: 
-  - Research each component of the MERN stack.
-  - Set up a basic project structure using MERN.
-- [ ] **Assessment**: 
-  - Quiz on the components and setup of the MERN stack.
-- [ ] **Study Material**:
-  - [MERN Stack Overview](https://www.mongodb.com/mern-stack)
-  - [Basic MERN Setup Tutorial](https://www.freecodecamp.org/news/mern-stack-tutorial/)
+### Day 24: Intermediate MEAN Stack - Angular and Express Integration
+- **Intermediate**: Learn to connect Angular frontend with Express backend.
+  - **Study Material**: 
+    - [Connecting Angular with Express - Tutorial](https://www.digitalocean.com/community/tutorials/connecting-angular-to-express)
+  - **Task**: Integrate an Angular frontend with an Express backend.
+  - **Assessment**: Submit a project showing the connection between frontend and backend.
+  - **Notes**: Document integration process and challenges faced.
 
-#### Intermediate
-- [ ] **Topics**: 
-  - Building CRUD Applications with MERN
-  - State Management in React (Context API, Redux)
-- [ ] **Tasks**: 
-  - Build a CRUD application using MERN stack.
-  - Implement state management using React Context API or Redux.
-- [ ] **Assessment**: 
-  - Practical exercise on building and managing a CRUD application with MERN.
-- [ ] **Study Material**:
-  - [CRUD Operations in MERN](https://www.tutorialspoint.com/mern_stack/index.htm)
-  - [React State Management](https://reactjs.org/docs/state.html)
-  - [Redux Documentation](https://redux.js.org/)
+### Day 25: Advanced MEAN Stack - Angular State Management
+- **Advanced**: Implement state management using NgRx in an Angular application.
+  - **Study Material**: 
+    - [NgRx Documentation](https://ngrx.io/)
+    - [NgRx Tutorial - YouTube](https://www.youtube.com/watch?v=R4Ycwy2b5pM)
+  - **Task**: Integrate NgRx for state management in your MEAN stack application.
+  - **Assessment**: Submit a project with NgRx implemented.
+  - **Notes**: Note NgRx setup and state management details.
 
-#### Advanced
-- [ ] **Topics**: 
-  - Advanced MERN Features (JWT Authentication, Deployment)
-  - Optimizing MERN Applications
-- [ ] **Tasks**: 
-  - Implement JWT-based authentication in a MERN application.
-  - Explore optimization techniques for MERN applications.
-- [ ] **Assessment**: 
-  - Lab exercise on implementing advanced features and optimizing a MERN application.
-- [ ] **Study Material**:
-  - [JWT Authentication](https://jwt.io/)
-  - [Optimizing MERN Applications](https://www.toptal.com/mern)
+## Week 5: Frameworks and Libraries
 
----
+### Day 26: Introduction to Frontend Frameworks
+- **Beginner**: Overview of popular frontend frameworks (React, Angular, Vue.js).
+  - **Study Material**: 
+    - [React Overview - React](https://reactjs.org/docs/getting-started.html)
+    - [Angular Overview - Angular](https://angular.io/docs)
+    - [Vue.js Overview - Vue](https://vuejs.org/v2/guide/)
+  - **Task**: Explore the basics of each framework.
+  - **Assessment**: Compare and contrast the features of React, Angular, and Vue.js.
+  - **Notes**: Document key features of each frontend framework.
 
-## Days 76-90: MEAN Stack
+### Day 27: Intermediate React - Component Lifecycle
+- **Intermediate**: Learn about React component lifecycle methods.
+  - **Study Material**: 
+    - [React Component Lifecycle - React](https://reactjs.org/docs/react-component.html#the-component-lifecycle)
+  - **Task**: Implement component lifecycle methods in a React application.
+  - **Assessment**: Submit a project demonstrating React lifecycle methods.
+  - **Notes**: Note lifecycle methods and their usage.
 
-### Day 76: Introduction to MEAN Stack
+### Day 28: Advanced React - Hooks
+- **Advanced**: Understand and implement React Hooks for managing state and side effects.
+  - **Study Material**: 
+    - [React Hooks - React](https://reactjs.org/docs/hooks-intro.html)
+  - **Task**: Refactor a class component to use Hooks.
+  - **Assessment**: Submit a project demonstrating the use of React Hooks.
+  - **Notes**: Document different Hooks and their usage.
 
-#### Beginner
-- [ ] **Topics**: 
-  - What is MEAN Stack?
-  - Overview of MongoDB, Express.js, Angular, and Node.js
-- [ ] **Tasks**: 
-  - Research each component of the MEAN stack.
-  - Set up a basic project structure using MEAN.
-- [ ] **Assessment**: 
-  - Quiz on the components and setup of the MEAN stack.
-- [ ] **Study Material**:
-  - [MEAN Stack Overview](https://www.mongodb.com/mean-stack)
-  - [Basic MEAN Setup Tutorial](https://www.tutorialspoint.com/mean_stack/index.htm)
+### Day 29: Introduction to Vue.js
+- **Beginner**: Get started with Vue.js and its core concepts.
+  - **Study Material**: 
+    - [Vue.js Guide - Vue](https://vuejs.org/v2/guide/)
+  - **Task**: Create a simple Vue.js application.
+  - **Assessment**: Submit a Vue.js project with basic functionality.
+  - **Notes**: Note Vue.js components and directives.
 
-#### Intermediate
-- [ ] **Topics**: 
-  - Building CRUD Applications with MEAN
-  - Data Binding and Services in Angular
-- [ ] **Tasks**: 
-  - Build a CRUD application using MEAN stack.
-  - Implement data binding and services in Angular.
-- [ ] **Assessment**: 
-  - Practical exercise on building and managing a CRUD application with MEAN.
-- [ ] **Study Material**:
-  - [CRUD Operations in MEAN](https://www.geeksforgeeks.org/mean-stack/)
-  - [Angular Data Binding](https://angular.io/guide/binding)
-
-#### Advanced
-- [ ] **Topics**: 
-  - Advanced MEAN Features (JWT Authentication, Deployment)
-  - Optimizing MEAN Applications
-- [ ] **Tasks**: 
-  - Implement JWT-based authentication in a MEAN application.
-  - Explore optimization techniques for MEAN applications.
-- [ ] **Assessment**: 
-  - Lab exercise on implementing advanced features and optimizing a MEAN application.
-- [ ] **Study Material**:
-  - [JWT Authentication](https://jwt.io/)
-  - [Optimizing MEAN Applications](https://www.toptal.com/angular)
+### Day 30: Intermediate Vue.js - Vuex
+- **Intermediate**: Implement state management with Vuex in a Vue.js application.
+  - **Study Material**: 
+    - [Vuex Documentation - Vue](https://vuex.vuejs.org/)
+  - **Task**: Integrate Vuex for state management in your Vue.js application.
+  - **Assessment**: Submit a project with Vuex implemented.
+  - **Notes**: Document Vuex state management details.
 
 ---
 
-## Days 91-105: MEVN Stack
+## Week 6: API Development, DevOps, Testing, Git & GitHub
 
-### Day 91: Introduction to MEVN Stack
+### Day 31: Introduction to API Development
+- **Beginner**: Learn about basic API development principles and RESTful services.
+  - **Study Material**: 
+    - [Introduction to APIs - MDN](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Introduction)
+  - **Task**: Design a simple RESTful API.
+  - **Assessment**: Submit API documentation and basic implementation.
+  - **Notes**: Document API endpoints and their purposes.
 
-#### Beginner
-- [ ] **Topics**: 
-  - What is MEVN Stack?
-  - Overview of MongoDB, Express.js, Vue.js, and Node.js
-- [ ] **Tasks**: 
-  - Research each component of the MEVN stack.
-  - Set up a basic project structure using MEVN.
-- [ ] **Assessment**: 
-  - Quiz on the components and setup of the MEVN stack.
-- [ ] **Study Material**:
-  - [MEVN Stack Overview](https://www.mongodb.com/mevn-stack)
-  - [Basic MEVN Setup Tutorial](https://www.digitalocean.com/community/tutorial_series/learn-the-mevn-stack)
+### Day 32: Intermediate API Development - Authentication
+- **Intermediate**: Implement authentication in REST APIs.
+  - **Study Material**: 
+    - [API Authentication - MDN](https://developer.mozilla.org/en-US/docs/Web/Security/API)
+  - **Task**: Add authentication to your REST API.
+  - **Assessment**: Submit an API with authentication mechanisms.
+  - **Notes**: Note authentication methods and security measures.
 
-#### Intermediate
-- [ ] **Topics**: 
-  - Building CRUD Applications with MEVN
-  - Vue.js Data Binding and Vuex for State Management
-- [ ] **Tasks**: 
-  - Build a CRUD application using MEVN stack.
-  - Implement data binding and state management with Vuex.
-- [ ] **Assessment**: 
-  - Practical exercise on building and managing a CRUD application with MEVN.
-- [ ] **Study Material**:
-  - [CRUD Operations in MEVN](https://www.tutorialspoint.com/vuejs/index.htm)
-  - [Vuex Documentation](https://vuex.vuejs.org/)
+### Day 33: Advanced API Development - Rate Limiting
+- **Advanced**: Implement rate limiting and security features in APIs.
+  -
 
-#### Advanced
-- [ ] **Topics**: 
-  - Advanced MEVN Features (JWT Authentication, Deployment)
-  - Optimizing MEVN Applications
-- [ ] **Tasks**: 
-  - Implement JWT-based authentication in a MEVN application.
-  - Explore optimization techniques for MEVN applications.
-- [ ] **Assessment**: 
-  - Lab exercise on implementing advanced features and optimizing a MEVN application.
-- [ ] **Study Material**:
-  - [JWT Authentication](https://jwt.io/)
-  - [Optimizing MEVN Applications](https://www.toptal.com/vue)
+ **Study Material**: 
+    - [Rate Limiting - API Documentation](https://cloud.google.com/endpoints/docs/openapi/rate-limiting)
+  - **Task**: Add rate limiting to your API.
+  - **Assessment**: Submit an API with rate limiting and security features.
+  - **Notes**: Document rate limiting strategies and implementation details.
 
----
+### Day 34: Introduction to DevOps
+- **Beginner**: Understand DevOps principles and practices.
+  - **Study Material**: 
+    - [DevOps Overview - AWS](https://aws.amazon.com/devops/what-is-devops/)
+  - **Task**: Explore basic DevOps concepts and tools.
+  - **Assessment**: Write a summary of DevOps practices.
+  - **Notes**: Note key DevOps practices and tools.
 
-## Days 106-120: DevOps
+### Day 35: Intermediate DevOps - CI/CD
+- **Intermediate**: Learn about Continuous Integration and Continuous Deployment (CI/CD).
+  - **Study Material**: 
+    - [CI/CD Pipeline - Azure](https://docs.microsoft.com/en-us/azure/devops/pipelines/?view=azure-devops)
+  - **Task**: Set up a basic CI/CD pipeline.
+  - **Assessment**: Submit a project demonstrating CI/CD pipeline setup.
+  - **Notes**: Document CI/CD setup steps and configuration.
 
-### Day 106: Introduction to DevOps
+### Day 36: Advanced DevOps - Containerization with Docker
+- **Advanced**: Understand Docker and containerization.
+  - **Study Material**: 
+    - [Docker Documentation](https://docs.docker.com/)
+  - **Task**: Containerize an application using Docker.
+  - **Assessment**: Submit a Dockerized application with a Dockerfile.
+  - **Notes**: Note Docker commands and containerization process.
 
-#### Beginner
-- [ ] **Topics**: 
-  - What is DevOps?
-  - Key Concepts (CI/CD, Version Control)
-- [ ] **Tasks**: 
-  - Research DevOps principles and practices.
-  - Set up a basic CI/CD pipeline using a tool like GitHub Actions or GitLab CI.
-- [ ] **Assessment**: 
-  - Quiz on DevOps basics.
-- [ ] **Study Material**:
-  - [What is DevOps?](https://azure.microsoft.com/en-us/overview/devops/)
-  - [CI/CD Basics](https://www.redhat.com/en/topics/devops/what-is-ci-cd)
+### Day 37: Introduction to Testing
+- **Beginner**: Learn about different types of testing (unit, integration, end-to-end).
+  - **Study Material**: 
+    - [Introduction to Testing - MDN](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Testing)
+  - **Task**: Explore basic testing concepts and tools.
+  - **Assessment**: Write a summary of testing types and their importance.
+  - **Notes**: Document different types of testing and their purposes.
 
-#### Intermediate
-- [ ] **Topics**: 
-  - Infrastructure as Code (IaC) with Tools like Terraform
-  - Containerization with Docker
-- [ ] **Tasks**: 
-  - Implement Infrastructure as Code using Terraform.
-  - Set up containerization with Docker.
-- [ ] **Assessment**: 
-  - Practical exercise on IaC and Docker.
-- [ ] **Study Material**:
-  - [Terraform Documentation](https://www.terraform.io/docs)
-  - [Docker Documentation](https://docs.docker.com/)
+### Day 38: Intermediate Testing - Unit Testing
+- **Intermediate**: Implement unit testing in a JavaScript application.
+  - **Study Material**: 
+    - [Unit Testing with Jest - Jest](https://jestjs.io/docs/en/getting-started)
+  - **Task**: Write unit tests for your JavaScript code.
+  - **Assessment**: Submit a project with unit tests implemented using Jest.
+  - **Notes**: Document unit testing methods and tools used.
 
-#### Advanced
-- [ ] **Topics**: 
-  - Orchestration with Kubernetes
-  - Monitoring and Logging in DevOps
-- [ ] **Tasks**: 
-  - Set up a Kubernetes cluster and deploy applications.
-  - Implement monitoring and logging using tools like Prometheus and Grafana.
-- [ ] **Assessment**: 
-  - Lab exercise on Kubernetes deployment and monitoring.
-- [ ] **Study Material**:
-  - [Kubernetes Documentation](https://kubernetes.io/docs/home/)
-  - [Prometheus and Grafana](https://prometheus.io/docs/introduction/overview/)
+### Day 39: Advanced Testing - End-to-End Testing
+- **Advanced**: Implement end-to-end testing using tools like Cypress or Selenium.
+  - **Study Material**: 
+    - [End-to-End Testing with Cypress - Cypress](https://www.cypress.io/)
+  - **Task**: Set up end-to-end tests for a web application.
+  - **Assessment**: Submit a project with end-to-end tests implemented.
+  - **Notes**: Document end-to-end testing setup and results.
 
----
+### Day 40: Introduction to Git & GitHub
+- **Beginner**: Learn basic Git commands and GitHub workflows.
+  - **Study Material**: 
+    - [Git Basics - Git SCM](https://git-scm.com/doc)
+    - [GitHub Documentation - GitHub](https://docs.github.com/en)
+  - **Task**: Set up a Git repository and commit code.
+  - **Assessment**: Submit a Git repository with basic commits and a README file.
+  - **Notes**: Note basic Git commands and GitHub usage.
 
-## Days 121-135: Testing
+### Day 41: Intermediate Git & GitHub - Branching & Merging
+- **Intermediate**: Understand branching and merging in Git.
+  - **Study Material**: 
+    - [Git Branching - Git SCM](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell)
+  - **Task**: Create branches and merge them in a Git repository.
+  - **Assessment**: Submit a project demonstrating branching and merging.
+  - **Notes**: Document branching strategies and merging process.
 
-### Day 121: Introduction to Software Testing
-
-#### Beginner
-- [ ] **Topics**: 
-  - What is Software Testing?
-  - Types of Testing (Unit Testing, Integration Testing)
-- [ ] **Tasks**: 
-  - Research the importance of software testing.
-  - Implement basic unit tests for a simple application.
-- [ ] **Assessment**: 
-  - Quiz on software testing basics.
-- [ ] **Study Material**:
-  - [Software Testing Basics](https://www.guru99.com/software-testing.html)
-  - [Unit Testing Guide](https://www.softwaretestinghelp.com/what-is-unit-testing/)
-
-#### Intermediate
-- [ ] **Topics**: 
-  - Test-Driven Development (TDD)
-  - Automated Testing Tools (Selenium, Jest)
-- [ ] **Tasks**: 
-  - Implement Test-Driven Development in a project.
-  - Set up automated testing using Selenium or Jest.
-- [ ] **Assessment**: 
-  - Practical exercise on TDD and automated testing.
-- [ ] **Study Material**:
-  - [Test-Driven Development](https://www.agilealliance.org/glossary/tdd/)
-  - [Selenium Documentation](https://www.selenium.dev/documentation/)
-  - [Jest Documentation
-
-](https://jestjs.io/docs/getting-started)
-
-#### Advanced
-- [ ] **Topics**: 
-  - Performance Testing and Load Testing
-  - Advanced Testing Strategies (Mocking, Continuous Testing)
-- [ ] **Tasks**: 
-  - Implement performance testing using tools like JMeter.
-  - Explore advanced testing strategies and integrate them into your CI/CD pipeline.
-- [ ] **Assessment**: 
-  - Lab exercise on performance testing and advanced strategies.
-- [ ] **Study Material**:
-  - [Performance Testing with JMeter](https://jmeter.apache.org/)
-  - [Mocking in Tests](https://www.mockaroo.com/)
+### Day 42: Advanced Git & GitHub - Pull Requests and Code Review
+- **Advanced**: Learn about pull requests and code reviews on GitHub.
+  - **Study Material**: 
+    - [GitHub Pull Requests - GitHub](https://docs.github.com/en/pull-requests)
+  - **Task**: Create a pull request and perform a code review.
+  - **Assessment**: Submit a GitHub repository with pull requests and code reviews.
+  - **Notes**: Document pull request workflow and code review practices.
 
 ---
 
-## Days 136-150: API Development
+## Week 7: Full Stack Development (MERN/MEAN/MEVN) Basics
 
-### Day 136: Introduction to API Development
+### Day 43: Introduction to MEVN Stack
+- **Beginner**: Overview of the MEVN stack (MongoDB, Express, Vue.js, Node.js).
+  - **Study Material**: 
+    - [MEVN Stack Overview - Medium](https://medium.com/@zeeshan.p/mevn-stack-tutorial-29c37e8a0d3d)
+  - **Task**: Set up a basic MEVN stack project.
+  - **Assessment**: Submit a project with basic MEVN stack setup.
+  - **Notes**: Document setup steps and configuration.
 
-#### Beginner
-- [ ] **Topics**: 
-  - What is an API?
-  - Overview of RESTful APIs
-- [ ] **Tasks**: 
-  - Research API concepts and RESTful architecture.
-  - Build a simple RESTful API with Express or Flask.
-- [ ] **Assessment**: 
-  - Quiz on API development basics.
-- [ ] **Study Material**:
-  - [What is an API?](https://www.ibm.com/topics/what-is-an-api)
-  - [RESTful API Guide](https://restfulapi.net/)
+### Day 44: Intermediate MEVN Stack - Connecting Vue.js and Express
+- **Intermediate**: Learn to connect Vue.js frontend with Express backend.
+  - **Study Material**: 
+    - [Connecting Vue.js with Express - Tutorial](https://www.digitalocean.com/community/tutorials/connecting-vue-js-to-express)
+  - **Task**: Integrate a Vue.js frontend with an Express backend.
+  - **Assessment**: Submit a project showing the connection between frontend and backend.
+  - **Notes**: Document integration process and challenges faced.
 
-#### Intermediate
-- [ ] **Topics**: 
-  - API Authentication (OAuth, JWT)
-  - API Documentation and Testing
-- [ ] **Tasks**: 
-  - Implement API authentication using OAuth or JWT.
-  - Document and test your API using tools like Postman.
-- [ ] **Assessment**: 
-  - Practical exercise on API authentication and documentation.
-- [ ] **Study Material**:
-  - [OAuth 2.0 Overview](https://oauth.net/2/)
-  - [Postman Documentation](https://learning.postman.com/docs/getting-started/introduction/)
-
-#### Advanced
-- [ ] **Topics**: 
-  - API Versioning and Rate Limiting
-  - Designing Scalable APIs
-- [ ] **Tasks**: 
-  - Implement API versioning and rate limiting.
-  - Explore strategies for designing scalable APIs.
-- [ ] **Assessment**: 
-  - Lab exercise on implementing advanced API features and scalability.
-- [ ] **Study Material**:
-  - [API Versioning Strategies](https://www.twilio.com/blog/2019/08/api-versioning.html)
-  - [Scalable API Design](https://www.programmableweb.com/news/5-tips-designing-scalable-apis/how-to/2017/10/09)
+### Day 45: Advanced MEVN Stack - Vuex for State Management
+- **Advanced**: Implement state management using Vuex in a MEVN stack application.
+  - **Study Material**: 
+    - [Vuex Documentation - Vue](https://vuex.vuejs.org/)
+  - **Task**: Integrate Vuex for state management in your MEVN stack application.
+  - **Assessment**: Submit a project with Vuex implemented.
+  - **Notes**: Document Vuex setup and state management details.
 
 ---
 
-## Days 151-165: Interview Preparation
+## Week 8: Advanced Topics and Integrations
 
-### Day 151: Technical Interview Basics
+### Day 46: Advanced Frontend - Performance Optimization
+- **Advanced**: Learn techniques for optimizing frontend performance.
+  - **Study Material**: 
+    - [Frontend Performance - Google Developers](https://developers.google.com/web/fundamentals/performance)
+  - **Task**: Implement performance optimizations in a frontend application.
+  - **Assessment**: Submit a project with performance optimizations applied.
+  - **Notes**: Document optimization techniques and results.
 
-#### Beginner
-- [ ] **Topics**: 
-  - Common Interview Questions
-  - Resume and Portfolio Preparation
-- [ ] **Tasks**: 
-  - Research common technical interview questions.
-  - Update your resume and portfolio.
-- [ ] **Assessment**: 
-  - Quiz on interview preparation basics.
-- [ ] **Study Material**:
-  - [Common Interview Questions](https://www.thebalancecareers.com/top-interview-questions-and-answers-2061220)
-  - [Resume and Portfolio Tips](https://www.thebalancecareers.com/how-to-write-a-resume-2060378)
+### Day 47: Advanced Backend - Microservices Architecture
+- **Advanced**: Understand and implement microservices architecture.
+  - **Study Material**: 
+    - [Microservices Architecture - Martin Fowler](https://martinfowler.com/articles/microservices.html)
+  - **Task**: Design and implement a basic microservices architecture.
+  - **Assessment**: Submit a project demonstrating microservices.
+  - **Notes**: Document microservices design and implementation details.
 
-#### Intermediate
-- [ ] **Topics**: 
-  - Data Structures and Algorithms
-  - Problem-Solving Techniques
-- [ ] **Tasks**: 
-  - Study common data structures and algorithms.
-  - Practice problem-solving on platforms like LeetCode or HackerRank.
-- [ ] **Assessment**: 
-  - Practical exercises on data structures and algorithms.
-- [ ] **Study Material**:
-  - [Data Structures and Algorithms](https://www.geeksforgeeks.org/data-structures/)
-  - [LeetCode](https://leetcode.com/)
-  - [HackerRank](https://www.hackerrank.com/)
+### Day 48: Advanced Full Stack - Serverless Architecture
+- **Advanced**: Explore serverless architecture using AWS Lambda or Azure Functions.
+  - **Study Material**: 
+    - [Serverless Architecture - AWS](https://aws.amazon.com/serverless/)
+  - **Task**: Implement a serverless function and integrate it with your application.
+  - **Assessment**: Submit a project using serverless architecture.
+  - **Notes**: Document serverless setup and integration details.
 
-#### Advanced
-- [ ] **Topics**: 
-  - System Design Interviews
-  - Behavioral Interview Questions
-- [ ] **Tasks**: 
-  - Study system design principles and prepare for related questions.
-  - Practice behavioral interview questions and responses.
-- [ ] **Assessment**: 
-  - Mock interviews focusing on system design and behavioral questions.
-- [ ] **Study Material**:
-  - [System Design Primer](https://github.com/donnemartin/system-design-primer)
-  - [Behavioral Interview Tips](https://www.thebalancecareers.com/behavioral-interview-questions-and-answers-2061268)
+### Day 49: Advanced DevOps - Infrastructure as Code (IaC)
+- **Advanced**: Implement Infrastructure as Code using tools like Terraform or AWS CloudFormation.
+  - **Study Material**: 
+    - [Terraform Documentation](https://www.terraform.io/docs/index.html)
+  - **Task**: Set up infrastructure using IaC tools.
+  - **Assessment**: Submit a project with infrastructure set up using IaC.
+  - **Notes**: Document IaC tools and setup process.
 
----
+### Day 50: Advanced Testing - Load Testing
+- **Advanced**: Perform load testing using tools like JMeter or Locust.
+  - **Study Material**: 
+    - [JMeter Documentation](https://jmeter.apache.org/usermanual/index.html)
+  - **Task**: Conduct load testing on an application and analyze results.
+  - **Assessment**: Submit a project with load testing results.
+  - **Notes**: Document load testing setup and findings.
 
-## Days 166-180: Aptitude Preparation
+### Day 51: Advanced Git & GitHub - Automation with GitHub Actions
+- **Advanced**: Use GitHub Actions to automate workflows.
+  - **Study Material**: 
+    - [GitHub Actions Documentation](https://docs.github.com/en/actions)
+  - **Task**: Set up a GitHub Action for automated testing or deployment.
+  - **Assessment**: Submit a GitHub repository with GitHub Actions implemented.
+  - **Notes**: Document GitHub Actions configuration and automation details.
 
-### Day 166: Introduction to Aptitude
+## Week 9: Additional Topics and Final Projects
 
-#### Beginner
-- [ ] **Topics**: 
-  - Basics of Aptitude Testing
-  - Common Types of Aptitude Questions (Numerical, Verbal)
-- [ ] **Tasks**: 
-  - Study basic aptitude questions and practice.
-  - Take an online aptitude test.
-- [ ] **Assessment**: 
-  - Quiz on aptitude basics.
-- [ ] **Study Material**:
-  - [Aptitude Test Overview](https://www.indeed.com/career-advice/interviewing/aptitude-tests)
-  - [Practice Aptitude Questions](https://www.mygreatlearning.com/blog/aptitude-test-questions/)
+### Day 52: Introduction to Progressive Web Apps (PWAs)
+- **Beginner**: Learn the basics of Progressive Web Apps.
+  - **Study Material**: 
+    -
 
-#### Intermediate
-- [ ] **Topics**: 
-  - Advanced Aptitude Topics (Logical Reasoning, Data Interpretation)
-  - Speed and Accuracy Techniques
-- [ ] **Tasks**: 
-  - Practice advanced aptitude questions.
-  - Learn and apply techniques for improving speed and accuracy.
-- [ ] **Assessment**: 
-  - Practical exercises on advanced aptitude topics.
-- [ ] **Study Material**:
-  - [Logical Reasoning Tips](https://www.sanfoundry.com/logical-reasoning-questions-answers/)
-  - [Data Interpretation Guide](https://www.scribbr.com/methodology/data-interpretation/)
+ [Progressive Web Apps - Google Developers](https://developers.google.com/web/progressive-web-apps)
+  - **Task**: Convert an existing web app into a PWA.
+  - **Assessment**: Submit a PWA project with service workers and offline capabilities.
+  - **Notes**: Document PWA features and implementation.
 
-#### Advanced
-- [ ] **Topics**: 
-  - Complex Aptitude Problems and Solutions
-  - Mock Aptitude Tests and Timed Practice
-- [ ] **Tasks**: 
-  - Solve complex aptitude problems.
-  - Take timed mock aptitude tests to simulate real exam conditions.
-- [ ] **Assessment**: 
-  - Timed mock aptitude tests and review.
-- [ ] **Study Material**:
-  - [Complex Aptitude Problems](https://www.brainmetrix.com/aptitude/)
-  - [Mock Aptitude Tests](https://www.indiabix.com/)
+### Day 53: Intermediate Progressive Web Apps - Offline Capabilities
+- **Intermediate**: Implement offline capabilities in a PWA.
+  - **Study Material**: 
+    - [Offline First Strategy - Google Developers](https://developers.google.com/web/fundamentals/architecture/offline)
+  - **Task**: Enhance your PWA with offline capabilities.
+  - **Assessment**: Submit a PWA project with offline support.
+  - **Notes**: Document offline implementation and testing.
 
----
+### Day 54: Advanced Progressive Web Apps - Push Notifications
+- **Advanced**: Implement push notifications in a PWA.
+  - **Study Material**: 
+    - [Push Notifications - Google Developers](https://developers.google.com/web/fundamentals/push-notifications)
+  - **Task**: Add push notifications to your PWA.
+  - **Assessment**: Submit a PWA project with push notifications.
+  - **Notes**: Document push notifications setup and testing.
 
-## Days 181-183: Final Project
+### Day 55: Final Project - Full Stack Application
+- **Advanced**: Develop a comprehensive full stack application using any stack (MERN, MEAN, MEVN).
+  - **Study Material**: Apply knowledge from previous weeks.
+  - **Task**: Build and deploy a full stack application.
+  - **Assessment**: Submit a fully functional full stack application with documentation.
+  - **Notes**: Document development process and challenges faced.
 
-### Day 181: Project Planning
-
-- [ ] **Tasks**: 
-  - Define project scope and requirements.
-  - Plan the project phases and timeline.
-- [ ] **Assessment**: 
-  - Project proposal and planning document.
-- [ ] **Study Material**:
-  - [Project Planning Guide](https://www.projectmanagement.com/)
-
-### Day 182: Project Development
-
-- [ ] **Tasks**: 
-  - Develop the project according to the plan.
-  - Implement and test features.
-- [ ] **Assessment**: 
-  - Progress review and feature demonstration.
-- [ ] **Study Material**:
-  - [Development Best Practices](https://www.smartsheet.com/project-management-best-practices)
-
-### Day 183: Project Review
-
-- [ ] **Tasks**: 
-  - Finalize the project and prepare documentation.
-  - Conduct a review and presentation.
-- [ ] **Assessment**: 
-  - Final project presentation and evaluation.
-- [ ] **Study Material**:
-  - [Project Review Tips](https://www.projectmanager.com/blog/project-review/)
+### Day 56: Final Project - Presentation and Review
+- **Advanced**: Present your final project and review feedback.
+  - **Study Material**: Prepare a presentation for your project.
+  - **Task**: Present your final project and review feedback.
+  - **Assessment**: Submit a presentation and project review.
+  - **Notes**: Document feedback and areas for improvement.
 
 ---
 
-## Day 184: Review and Final Assessment
-
-- [ ] **Tasks**: 
-  - Review all topics covered.
-  - Take a comprehensive final assessment covering all areas.
-- [ ] **Assessment**: 
-  - Final assessment and review session.
-- [ ] **Study Material**:
-  - [Comprehensive Review Resources](https://www.coursera.org/)
-  - [Mock Assessments](https://www.udemy.com/)
-
----
-
-Feel free to adjust the topics and materials based on your specific learning needs and preferences. This plan provides a structured approach to mastering key areas over 180 days.
+This structured plan aims to cover fundamental to advanced topics in web development, including both frontend and backend technologies, along with crucial DevOps and testing practices. 
