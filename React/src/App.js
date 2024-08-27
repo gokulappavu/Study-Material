@@ -8,28 +8,33 @@ import Homepage from "./components/Header/Homepage/Homepage";
 import Home from "./components/Header/Homepage/Home";
 import Login from "./components/Header/Homepage/Login";
 import ListandKeys from "./components/Header/ListandKeys";
+import ContextFunc, {
+  ParentFunc,
+} from "./components/Header/ContextComp/ContextFunc";
 
 function App() {
   return (
     <div className="App">
-      <Routes>
-        <Route index element={<ParentComp />} />
-       
-        <Route path="/stateComp" element={<StateComp />} />
+      <ContextFunc>
+        <Routes>
+          <Route index element={<ParentComp />} />
 
-        <Route path="/listandkeys" element={<ListandKeys />} />
+          <Route path="/stateComp" element={<StateComp />} />
 
-        <Route path="*" element={<h1>Not Found Error 404</h1>} />
+          <Route path="/listandkeys" element={<ListandKeys />} />
 
-        <Route path="/functionState/:id" element={<FunctionStateCom />} />
+          <Route path="/ParentFunc" element={<ParentFunc />} />
 
-        <Route path="/homepage" element={<Homepage />}>
-          <Route index element={<Home />} />
-          <Route path="login" element={<Login />} />
-        </Route>
-        
-      </Routes>
+          <Route path="*" element={<h1>Not Found Error 404</h1>} />
 
+          <Route path="/functionState/:id" element={<FunctionStateCom />} />
+
+          <Route path="/homepage" element={<Homepage />}>
+            <Route index element={<Home />} />
+            <Route path="login" element={<Login />} />
+          </Route>
+        </Routes>
+      </ContextFunc>
     </div>
   );
 }
