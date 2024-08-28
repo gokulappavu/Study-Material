@@ -11,19 +11,22 @@ import ListandKeys from "./components/Header/ListandKeys";
 import ContextFunc, {
   ParentFunc,
 } from "./components/Header/ContextComp/ContextFunc";
+import ControlledComp from "./components/Header/ControlledComponent/ControlledComp";
 
 function App() {
   return (
     <div className="App">
       <ContextFunc>
         <Routes>
-          <Route index element={<ParentComp />} />
+          <Route  element={<ParentComp />} />
 
           <Route path="/stateComp" element={<StateComp />} />
 
           <Route path="/listandkeys" element={<ListandKeys />} />
 
           <Route path="/ParentFunc" element={<ParentFunc />} />
+
+          <Route index element={<ControlledComp />} />
 
           <Route path="*" element={<h1>Not Found Error 404</h1>} />
 
