@@ -12,6 +12,7 @@ import ContextFunc, {
   ParentFunc,
 } from "./components/Header/ContextComp/ContextFunc";
 import ControlledComp from "./components/Header/ControlledComponent/ControlledComp";
+import UncontrolledComp from "./components/Header/UncontrolledComponent/UncontrolledComp";
 
 function App() {
   return (
@@ -26,7 +27,9 @@ function App() {
 
           <Route path="/ParentFunc" element={<ParentFunc />} />
 
-          <Route index element={<ControlledComp />} />
+          <Route path="/controlled" element={<ControlledComp />} />
+
+          <Route index element={<UncontrolledComp />} />
 
           <Route path="*" element={<h1>Not Found Error 404</h1>} />
 

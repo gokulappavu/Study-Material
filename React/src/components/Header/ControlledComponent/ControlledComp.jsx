@@ -10,6 +10,12 @@ const ControlledComp = () => {
 
   const [formData, setFormData] = useState(initialState);
 
+  const handleChange = (e) => {
+    const { value, name } = e.target;
+    // setFormData({ ...formData, [name]: value });
+    setFormData((prevState) => ({ ...prevState, [name]: value }));
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(formData);
@@ -24,7 +30,7 @@ const ControlledComp = () => {
     });
   }, []);
 
-  console.log('yfufuf')
+  console.log("state", formData);
 
   const HandleReset = () => {
     setFormData({ email: "", userName: "", mobileNumber: "", address: "" });
@@ -40,7 +46,7 @@ const ControlledComp = () => {
         <label className="text-center text-xl font-bold">Controlled Form</label>
         <input
           value={formData.email}
-          onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+          onChange={handleChange}
           placeholder="Enter email Id"
           name="email"
           className="p-2 border border-gray-300 rounded"
@@ -49,9 +55,7 @@ const ControlledComp = () => {
         />
         <input
           value={formData.userName}
-          onChange={(e) =>
-            setFormData({ ...formData, userName: e.target.value })
-          }
+          onChange={handleChange}
           placeholder="Enter userName"
           name="userName"
           className="p-2 border border-gray-300 rounded"
@@ -60,9 +64,7 @@ const ControlledComp = () => {
         />
         <input
           value={formData.mobileNumber}
-          onChange={(e) =>
-            setFormData({ ...formData, mobileNumber: e.target.value })
-          }
+          onChange={handleChange}
           placeholder="Enter mobile number"
           name="mobileNumber"
           className="p-2 border border-gray-300 rounded"
@@ -71,9 +73,7 @@ const ControlledComp = () => {
         />
         <input
           value={formData.address}
-          onChange={(e) =>
-            setFormData({ ...formData, address: e.target.value })
-          }
+          onChange={handleChange}
           placeholder="Enter address"
           name="address"
           className="p-2 border border-gray-300 rounded"
