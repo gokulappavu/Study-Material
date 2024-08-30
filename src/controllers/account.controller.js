@@ -1,4 +1,5 @@
 const AccountModel = require("../models/account.model");
+const fileModel = require("../models/file.model");
 
 
 
@@ -95,6 +96,18 @@ const deleteAccount = async(req,res)=>{
 const fileUpload= async(req,res)=>{
     try {
         const batch=req.file
+        let userId = req.userId;
+
+        let data = {
+            ...batch,
+            userId,
+        };
+
+        const create = await fileModel.create(data)
+
+        res.json({
+            data: create
+        });
         console.log(batch)
     } catch (error) {
         res.json(error)
