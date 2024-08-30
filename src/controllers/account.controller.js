@@ -91,12 +91,28 @@ const deleteAccount = async(req,res)=>{
         
     }
 }
+
+const fileUpload= async(req,res)=>{
+    try {
+        const batch=req.file
+        console.log(batch)
+    } catch (error) {
+        res.json(error)
+    }
+    
+    
+}
+
+
+
+
 module.exports = {
     createAccount,
     getUserAccount,
     updateAccount,
     updateManyAccount,
     deleteManyAccount,
-    deleteAccount
+    deleteAccount,
+    fileUpload
 
 };
