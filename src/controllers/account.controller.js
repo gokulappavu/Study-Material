@@ -27,32 +27,76 @@ const createAccount = async (req, res) => {
 
 
 
-let data = {
-    user: 'test'
-};
-
-const getData = (req, res) => {
+const getUserAccount=async(req,res)=>{
     try {
-        const getUser = data;
-        if (!getUser) {
-            return res.json({
-                message: "Data not gount"
-            })
-        }
-        res.json({
-            getUser
-        })
-        
+        const userId=req.userId
+
+        const findAns= await AccountModel.findOne({userId})
+        if(!findAns)return res.status(404).json({ Message:"Data not found" })
+
+        res.json({ findAns })
+
     } catch (error) {
-        res.json({
-            Error: error
-        })
+        res.json({error})
     }
 }
 
+const updateAccount=async(req,res)=>{
+    try {
+        const { objectId } = req.query
+        const update = await AccountModel.findByIdAndUpdate( objectId, req.body, { new: true } )
+        if(!update)return res.status(404).json({ Message: "Data Not Found"})
 
+            res.json({ update })
+        
+    } catch (error) {
+        res.json({ error })
+        
+    }
+}
 
+const updateManyAccount = async (req,res) => {
+    try {
+        const userId = req.userId
+        const updateAll = await AccountModel.updateMany( { userId }, req.body)
+        res.json({ updateAll })
+    } catch (error) {
+        res.json({ error })
+    }
+}
+
+const deleteManyAccount = async(req,res)=>{
+    try {
+        const userId = req.userId
+        const userDelete = await AccountModel.deleteMany( {userId} )
+       
+            res.json({ userDelete })
+        
+    } catch (error) {
+        res.json({ error })
+        
+    }
+}
+
+const deleteAccount = async(req,res)=>{
+    try {
+        const { objectId } = req.query
+        const update = await AccountModel.findByIdAndDelete( objectId )
+        if(!update)return res.status(404).json({ Message: "Data Not Found"})
+
+            res.json({ update })
+        
+    } catch (error) {
+        res.json({ error })
+        
+    }
+}
 module.exports = {
     createAccount,
-    getData
+    getUserAccount,
+    updateAccount,
+    updateManyAccount,
+    deleteManyAccount,
+    deleteAccount
+
 };

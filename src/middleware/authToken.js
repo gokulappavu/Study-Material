@@ -11,6 +11,7 @@ const generateToken = (id) => {
 
 const verifyToken = async (req, res, next) => {
     let token = req.headers.authorization;
+    if(!token || !token.startsWith("Bearer"))return res.status(404).json({Message:"User must logedIn"})
     const withoutBearer = token.split(" ")[1];
     try {
         let payload = await jwt.verify(withoutBearer, process.env.JWT_KEY);
