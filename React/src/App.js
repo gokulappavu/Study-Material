@@ -13,15 +13,23 @@ import ContextFunc, {
 } from "./components/Header/ContextComp/ContextFunc";
 import ControlledComp from "./components/Header/ControlledComponent/ControlledComp";
 import UncontrolledComp from "./components/Header/UncontrolledComponent/UncontrolledComp";
+import Create from "./components/Header/CRUD Components/Create";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import Read from "./components/Header/CRUD Components/Read";
 
 function App() {
   return (
     <div className="App">
       <ContextFunc>
         <Routes>
-          <Route  element={<ParentComp />} />
+          <Route element={<ParentComp />} />
 
           <Route path="/stateComp" element={<StateComp />} />
+
+          <Route path="/addform" element={<Create />} />
+
+          <Route index element={<Read />} />
 
           <Route path="/listandkeys" element={<ListandKeys />} />
 
@@ -29,7 +37,7 @@ function App() {
 
           <Route path="/controlled" element={<ControlledComp />} />
 
-          <Route index element={<UncontrolledComp />} />
+          <Route path="/uncontrolled" element={<UncontrolledComp />} />
 
           <Route path="*" element={<h1>Not Found Error 404</h1>} />
 
@@ -41,6 +49,7 @@ function App() {
           </Route>
         </Routes>
       </ContextFunc>
+      <ToastContainer autoClose={3000} />
     </div>
   );
 }
