@@ -4,6 +4,8 @@ const register = require("../models/register.model");
 
 const generateToken = (id) => {
     let token = jwt.sign({ userId: id }, process.env.JWT_KEY, { expiresIn: '1h' });
+    
+    
     return token;
 };
 

@@ -1,6 +1,6 @@
 const AccountModel = require("../models/account.model");
 const fileModel = require("../models/file.model");
-
+const fs = require("fs");
 
 
 
@@ -116,6 +116,52 @@ const fileUpload= async(req,res)=>{
     
 }
 
+const getUpload = async(req,res)=>{
+    try {
+     const userId = req.userId
+ 
+     const findUser=await fileModel.find({userId})
+     if(!findUser || findUser.length===0){res.status(404).json({message:"data no found"})}
+ 
+     res.json({findUser})
+ 
+    } catch (error) {
+     res.json({error})
+    }
+ 
+ };
+
+
+
+ const updateFile = async(req, res) => {
+    try {
+        let { objectId } = req.query;
+        const findFile = await fileModel.findById(objectId);
+        console.log("tet", findFile);
+        
+        if (!findFile) {
+            return res.status(404).json({message: "data not found"})
+        }
+        const newFile = req.file;
+
+        if (findFile) {
+            fs.unlinkSync(`${findFile.destination}/${findFile.filename}`);           
+            
+        }
+        let data = {
+            ...newFile
+        };
+        const update = await fileModel.findByIdAndUpdate(objectId, data, {new: true});
+        res.json({update});
+
+    } catch (error) {
+        res.json({
+            error
+        })
+    }
+ };
+ 
+
 
 
 
@@ -126,6 +172,8 @@ module.exports = {
     updateManyAccount,
     deleteManyAccount,
     deleteAccount,
-    fileUpload
+    fileUpload,
+    getUpload,
+    updateFile
 
 };
