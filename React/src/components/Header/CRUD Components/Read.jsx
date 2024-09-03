@@ -4,14 +4,14 @@ import { FaEdit } from "react-icons/fa";
 import { FcViewDetails } from "react-icons/fc";
 import { MdDelete } from "react-icons/md";
 import { Link } from "react-router-dom";
+import { toast } from "react-toastify";
 
 const Read = () => {
   const [data, setData] = useState([]);
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const getFunction = async () => {
-      setLoading(true);
       await axios
         .get("http://localhost:7000/v1/user")
         .then((res) => {
@@ -22,6 +22,16 @@ const Read = () => {
     };
     getFunction();
   }, []);
+
+  const handleDelete = async (id) => {
+    await axios
+      .delete(`http://localhost:7000/v1/user?_id=${id}`)
+      .then((res) => {
+        toast.success(res.data.message);
+        setData((prev) => prev.filter((val) => val._id !== id));
+      })
+      .catch((err) => console.log(err));
+  };
 
   return (
     <div className="w-full h-auto flex flex-col gap-5 items-center p-10">
@@ -41,8 +51,14 @@ const Read = () => {
               <div className="flex flex-col gap-1 bg-green-100 shadow rounded p-3 ">
                 <div className="flex gap-1 justify-end">
                   <FcViewDetails className="w-5 h-5 cursor-pointer" />
-                  <FaEdit className="w-4 h-5 cursor-pointer text-blue-500" />
-                  <MdDelete className="w-5 h-5 cursor-pointer text-red-500" />
+                  <Link to={`/editform/${value._id}`}>
+                    <FaEdit className="w-4 h-5 cursor-pointer text-blue-500" />
+                  </Link>
+
+                  <MdDelete
+                    className="w-5 h-5 cursor-pointer text-red-500"
+                    onClick={() => handleDelete(value._id)}
+                  />
                 </div>
 
                 <h1>Username: {value?.userName}</h1>

@@ -17,6 +17,7 @@ import Create from "./components/Header/CRUD Components/Create";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Read from "./components/Header/CRUD Components/Read";
+import Update from "./components/Header/CRUD Components/Update";
 
 function App() {
   return (
@@ -28,6 +29,8 @@ function App() {
           <Route path="/stateComp" element={<StateComp />} />
 
           <Route path="/addform" element={<Create />} />
+
+          <Route path="/editform/:id" element={<Update />} />
 
           <Route index element={<Read />} />
 
