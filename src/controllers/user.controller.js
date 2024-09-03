@@ -25,15 +25,14 @@ const getUser = async (req, res) => {
   }
 };
 
-
 const getuserById = async (req, res) => {
   try {
-    const userId = req.userId;
+    const { _id } = req.query;
 
-    const findAns = await userModel.findOne({ userId });
+    const findAns = await userModel.findById(_id);
     if (!findAns) return res.status(404).json({ Message: "Data not found" });
 
-    res.json({ findAns });
+    res.json({ data: findAns });
   } catch (error) {
     res.json({ error });
   }
@@ -41,13 +40,13 @@ const getuserById = async (req, res) => {
 
 const updateUser = async (req, res) => {
   try {
-    const { objectId } = req.query;
-    const update = await userModel.findByIdAndUpdate(objectId, req.body, {
+    const { _id } = req.query;
+    const update = await userModel.findByIdAndUpdate(_id, req.body, {
       new: true,
     });
     if (!update) return res.status(404).json({ Message: "Data Not Found" });
 
-    res.json({ update });
+    res.json({ data: update, message: "User updated successfully." });
   } catch (error) {
     res.json({ error });
   }
@@ -55,11 +54,11 @@ const updateUser = async (req, res) => {
 
 const deleteUser = async (req, res) => {
   try {
-    const { objectId } = req.query;
-    const update = await userModel.findByIdAndDelete(objectId);
+    const { _id } = req.query;
+    const update = await userModel.findByIdAndDelete(_id);
     if (!update) return res.status(404).json({ Message: "Data Not Found" });
 
-    res.json({ update });
+    res.json({ message: "User deleted successfully." });
   } catch (error) {
     res.json({ error });
   }
@@ -70,4 +69,5 @@ module.exports = {
   getUser,
   updateUser,
   deleteUser,
+  getuserById,
 };
