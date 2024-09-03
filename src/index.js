@@ -13,6 +13,7 @@ app.use(express.json());
 connection();
 
 app.use("/v1", route);
+app.use("/img", express.static("src/files"))
 
 
 app.use("/", (req, res)=>{
@@ -21,5 +22,5 @@ res.send("Working")
 
 
 app.listen(process.env.PORT || 8000, () => {
-    console.log(`Server is running on ${7000}`);
+    console.log(`Server is running on http://localhost:${process.env.PORT}`);
 })

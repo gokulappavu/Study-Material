@@ -55,7 +55,7 @@ const login = async (req, res) => {
             return res.status(404).json({ Message: "Email Not Registred.."})
         };
 
-        const checkpassword = bcrypt.compare(password, findEmail.password);
+        const checkpassword = await bcrypt.compare(password, findEmail.password);
 
         console.log("test", checkpassword);
         if (!checkpassword) {
