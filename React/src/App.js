@@ -5,7 +5,7 @@ import FunctionStateCom from "./components/Header/FunctionStateCom";
 import ParentComp from "./components/Header/Props/ParentComp";
 import { Route, Routes } from "react-router-dom";
 import Homepage from "./components/Header/Homepage/Homepage";
-import Home from "./components/Header/Homepage/Home";
+// import Home from "./components/Header/Homepage/Home";
 import Login from "./components/Header/Homepage/Login";
 import ListandKeys from "./components/Header/ListandKeys";
 import ContextFunc, {
@@ -18,11 +18,12 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Read from "./components/Header/CRUD Components/Read";
 import Update from "./components/Header/CRUD Components/Update";
+import Home from "./components/Header/MainComponents/Home";
 
 function App() {
   return (
     <div className="App">
-      <ContextFunc>
+      {/* <ContextFunc>
         <Routes>
           <Route element={<ParentComp />} />
 
@@ -51,7 +52,29 @@ function App() {
             <Route path="login" element={<Login />} />
           </Route>
         </Routes>
-      </ContextFunc>
+      </ContextFunc> */}
+      <Routes>
+        <Route path="/" element={<Home />}>
+          <Route
+            path="users"
+            element={
+              <div className="flex justify-center items-center">Users</div>
+            }
+          />
+          <Route
+            path="staffs"
+            element={
+              <div className="flex justify-center items-center">Staffs</div>
+            }
+          />
+          <Route
+            path="sellers"
+            element={
+              <div className="flex justify-center items-center">Seller</div>
+            }
+          />
+        </Route>
+      </Routes>
       <ToastContainer autoClose={3000} />
     </div>
   );
