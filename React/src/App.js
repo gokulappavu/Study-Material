@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./App.css";
 import StateComp from "./components/Header/ClassStateComp";
 import FunctionStateCom from "./components/Header/FunctionStateCom";
@@ -19,10 +19,30 @@ import "react-toastify/dist/ReactToastify.css";
 import Read from "./components/Header/CRUD Components/Read";
 import Update from "./components/Header/CRUD Components/Update";
 import Home from "./components/Header/MainComponents/Home";
+import {
+  ContextComponent,
+  GlobalContextFucntion,
+} from "./components/Header/UseContext/ContextFunction";
+
+const Users = () => {
+  const { isLoggedIn, setIsLoggedIn } = useContext(GlobalContextFucntion);
+  return (
+    <div className="flex flex-col gap-4 justify-center items-center">
+      <h1>{isLoggedIn ? "User is logged in" : "User is Logged out"}</h1>
+
+      <h1
+        className="px-4 py-2 rounded text-white bg-blue-500 cursor-pointer"
+        onClick={() => setIsLoggedIn(true)}
+      >
+        Log in
+      </h1>
+    </div>
+  );
+};
 
 function App() {
   return (
-    <div className="App">
+    <div className="">
       {/* <ContextFunc>
         <Routes>
           <Route element={<ParentComp />} />
@@ -53,28 +73,26 @@ function App() {
           </Route>
         </Routes>
       </ContextFunc> */}
-      <Routes>
-        <Route path="/" element={<Home />}>
-          <Route
-            path="users"
-            element={
-              <div className="flex justify-center items-center">Users</div>
-            }
-          />
-          <Route
-            path="staffs"
-            element={
-              <div className="flex justify-center items-center">Staffs</div>
-            }
-          />
-          <Route
-            path="sellers"
-            element={
-              <div className="flex justify-center items-center">Seller</div>
-            }
-          />
-        </Route>
-      </Routes>
+      <ContextComponent>
+        <Routes>
+          <Route path="/" element={<Home />}>
+            <Route path="users" element={<Users />} />
+            <Route
+              path="staffs"
+              element={
+                <div className="flex justify-center items-center">Staffs</div>
+              }
+            />
+            <Route
+              path="sellers"
+              element={
+                <div className="flex justify-center items-center">Seller</div>
+              }
+            />
+          </Route>
+        </Routes>
+      </ContextComponent>
+
       <ToastContainer autoClose={3000} />
     </div>
   );
