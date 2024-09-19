@@ -3,7 +3,7 @@ import "./App.css";
 import StateComp from "./components/Header/ClassStateComp";
 import FunctionStateCom from "./components/Header/FunctionStateCom";
 import ParentComp from "./components/Header/Props/ParentComp";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import Homepage from "./components/Header/Homepage/Homepage";
 // import Home from "./components/Header/Homepage/Home";
 import Login from "./components/Header/Homepage/Login";
@@ -26,10 +26,12 @@ import {
 
 const Users = () => {
   const { isLoggedIn, setIsLoggedIn } = useContext(GlobalContextFucntion);
-  return (
-    <div className="flex flex-col gap-4 justify-center items-center">
-      <h1>{isLoggedIn ? "User is logged in" : "User is Logged out"}</h1>
+  const { state } = useLocation();
 
+  return (
+    <div className="w-full flex flex-col gap-4 justify-center items-center">
+      <h1>{isLoggedIn ? "User is logged in" : "User is Logged out"}</h1>
+      <p>{state}</p>
       <h1
         className="px-4 py-2 rounded text-white bg-blue-500 cursor-pointer"
         onClick={() => setIsLoggedIn(true)}
@@ -80,13 +82,17 @@ function App() {
             <Route
               path="staffs"
               element={
-                <div className="flex justify-center items-center">Staffs</div>
+                <div className=" h-[800px] flex justify-center items-center">
+                  Staffs
+                </div>
               }
             />
             <Route
               path="sellers"
               element={
-                <div className="flex justify-center items-center">Seller</div>
+                <div className="h-[1200px] flex justify-center items-center">
+                  Seller
+                </div>
               }
             />
           </Route>
