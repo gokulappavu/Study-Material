@@ -23,6 +23,7 @@ import {
   ContextComponent,
   GlobalContextFucntion,
 } from "./components/Header/UseContext/ContextFunction";
+import FileUpload from "./components/Header/FileUpload/FileUpload";
 
 const Users = () => {
   const { isLoggedIn, setIsLoggedIn } = useContext(GlobalContextFucntion);
@@ -76,7 +77,7 @@ function App() {
         </Routes>
       </ContextFunc> */}
       <ContextComponent>
-        <Routes>
+        {/* <Routes>
           <Route path="/" element={<Home />}>
             <Route path="users" element={<Users />} />
             <Route
@@ -96,9 +97,9 @@ function App() {
               }
             />
           </Route>
-        </Routes>
+        </Routes> */}
       </ContextComponent>
-
+      <FileUpload />
       <ToastContainer autoClose={3000} />
     </div>
   );

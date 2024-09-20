@@ -48,7 +48,10 @@ const Read = () => {
         ) : (
           <>
             {data?.map((value) => (
-              <div className="flex flex-col gap-1 bg-green-100 shadow rounded p-3 ">
+              <div
+                className="flex flex-col gap-1 bg-green-100 shadow rounded p-3 "
+                key={value._id}
+              >
                 <div className="flex gap-1 justify-end">
                   <FcViewDetails className="w-5 h-5 cursor-pointer" />
                   <Link to={`/editform/${value._id}`}>

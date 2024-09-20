@@ -34,6 +34,8 @@ const Foot = () => {
   return <div className=" w-full h-40 bg-yellow-500 flex">Font</div>;
 };
 
+//Admin panel
+
 // const Home = () => {
 //   return (
 //     <div>
@@ -45,6 +47,9 @@ const Foot = () => {
 //     </div>
 //   );
 // };
+
+
+// website
 
 const Home = () => {
   return (
